@@ -2,13 +2,8 @@
 Surface motion capture for Bumblebees
 
 ## Description
-Bumblebees play a key role in agriculture, ecology, and bio-inspired robotics, making accurate 3D surface reconstruction essential for quantitative behavioral analysis. However, their dark dense hairs, complex structure and flexible limbs prone to visual occlusion and annotation difficulties, resulting in difficulties in reconstruction. Current template-free or generic template-based models offer limited structural detail and biological realism, while high-quality bumblebee templates and reliable morphological priors are lacking. To address these challenges, we propose BioMTBee, a template-based 3D mesh reconstruction framework
-for bumblebees. We built a high-fidelity articulated mesh template from micro-CT scans to provide an accurate morphological prior. A multi-view
-3D pose estimator with spatio-temporal filtering (BPST) is then introduced to extract robust 3D keypoints from 2D detections, guiding stable
-mesh template fitting. Building on this template, we combine 3D pose and shape supervision with biological constraints—bilateral symmetry,
-kinematic coupling, and temporal smoothness—to achieve anatomically consistent and temporally stable surface reconstructions. Experiments on
-3D reconstruction from multi-view images show improvements in morphological accuracy and biological plausibility over representative baselines,
-capturing fast limb movements and fine structural and textural details, and also generalize well to cross-species reconstruction.
+**BioMTBee** is a template-based 3D mesh reconstruction framework for bumblebees. We built a high-fidelity articulated mesh template from micro-CT scans to provide an accurate morphological prior. A multi-view 3D pose estimator with spatio-temporal filtering (BPST) is then introduced to extract robust 3D keypoints from 2D detections, guiding stable mesh template fitting. Building on this template, we combine 3D pose and shape supervision with biological constraints—bilateral symmetry,
+kinematic coupling, and temporal smoothness—to achieve anatomically consistent and temporally stable surface reconstructions. Experiments on 3D reconstruction from multi-view images show improvements in morphological accuracy and biological plausibility over representative baselines, capturing fast limb movements and fine structural and textural details, and also generalize well to cross-species reconstruction.
 
 <img width="2000" height="764" alt="1_Framework" src="https://github.com/user-attachments/assets/f2e0973d-1d2e-40e2-aeaa-6eeb179f56ed" />
 Fig. 1: Method overview. We design a biologically grounded reconstruction pipeline:(1) build an articulated micro-CT bumblebee mesh template for anatomical consistency; (2) estimate robust 3D pose keypoints via BPST with HQ-SAM masks to guide deformation; (3) learn nonrigid deformations to adapt the template to individuals; (4) enforce data fidelity and biological plausibility via loss design; (5) optimize all variables through differentiable rendering.
