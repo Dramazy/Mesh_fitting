@@ -2,7 +2,7 @@
 Surface motion capture for Bumblebees
 
 
-https://github.com/user-attachments/assets/b358f307-7444-460b-8049-d20607634beb
+<img width="2000" height="764" alt="1_Framework" src="https://github.com/user-attachments/assets/f2e0973d-1d2e-40e2-aeaa-6eeb179f56ed" />
 
 
 
@@ -66,6 +66,7 @@ To peform bumblebee mesh fitting on example dataset, see [train_mesh.ipynb](./tr
 ## Citing BioMTBee
 If you use BioMTBee in your research, please use the following BibTeX entry.
 
+'''
 @InProceedings{10.1007/978-3-032-37432-5_34,
 author="Zhang, Yi and Ye, Minchen and Zheng, Nenggan",
 title="BioMTBee: Biologically Constrained Multi-view Template-Based 3D Reconstruction of Bumblebee",
@@ -73,5 +74,5 @@ booktitle="Computer Vision -- ECCV 2026",
 year="2026",
 pages="600--619",
 }
-
+'''
 
