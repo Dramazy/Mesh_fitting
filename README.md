@@ -1,6 +1,11 @@
 # Bee Mesh
 Surface motion capture for Bumblebees
 
+
+https://github.com/user-attachments/assets/b358f307-7444-460b-8049-d20607634beb
+
+
+
 ##  Installation
 ### Create a conda environment:
 ~~~bash
@@ -57,3 +62,16 @@ Organize the dataset like:
 To check the articulated mesh model, see [template.ipynb](./template.ipynb) 
 
 To peform bumblebee mesh fitting on example dataset, see [train_mesh.ipynb](./train_mesh.ipynb)
+
+## Citing BioMTBee
+If you use BioMTBee in your research, please use the following BibTeX entry.
+
+@InProceedings{10.1007/978-3-032-37432-5_34,
+author="Zhang, Yi and Ye, Minchen and Zheng, Nenggan",
+title="BioMTBee: Biologically Constrained Multi-view Template-Based 3D Reconstruction of Bumblebee",
+booktitle="Computer Vision -- ECCV 2026",
+year="2026",
+pages="600--619",
+}
+
+
