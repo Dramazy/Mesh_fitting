@@ -3,8 +3,11 @@ Surface motion capture for Bumblebees
 
 
 <img width="2000" height="764" alt="1_Framework" src="https://github.com/user-attachments/assets/f2e0973d-1d2e-40e2-aeaa-6eeb179f56ed" />
+Fig. 1: Method overview. We design a biologically grounded reconstruction pipeline:(1) build an articulated micro-CT bumblebee mesh template for anatomical consistency; (2) estimate robust 3D pose keypoints via BPST with HQ-SAM masks to guide deformation; (3) learn nonrigid deformations to adapt the template to individuals; (4) enforce data fidelity and biological plausibility via loss design; (5) optimize all variables through differentiable rendering.
 
-
+<img width="1740" height="1096" alt="5_reconstruction_results" src="https://github.com/user-attachments/assets/9eedf822-65d8-4926-a823-b8382a038d74" />
+Fig. 2: Mesh reconstruction results of a bumblebee in motion. Despite rapid limb movements, our method accurately captures nonrigid deformations and reconstructs
+meshes closely aligned with the ground truth.
 
 ##  Installation
 ### Create a conda environment:
